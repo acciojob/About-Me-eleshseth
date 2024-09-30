@@ -1,1 +1,94 @@
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+.profile-page {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-pic {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.section h2 {
+    font-size: 24px;
+    color: #444;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #f4f4f4;
+    padding-bottom: 5px;
+}
+
+.section p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Skills Section */
+.skill-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skill-name {
+    width: 100px;
+    font-weight: bold;
+    color: #444;
+}
+
+.skill-bar {
+    background-color: #ddd;
+    width: 70%;
+    height: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 10px;
+}
+
+.skill-level {
+    background-color: #4CAF50;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.skill-percentage {
+    font-weight: bold;
+    color: #444;
+}
+
+@media (max-width: 768px) {
+    .skill-bar {
+        width: 60%;
+    }
+}
